@@ -10,16 +10,16 @@ import { urlApi } from '../../../config/urlApi';
 
 export default function MeuPerfil() {
 
-    useEffect(() => {
-        document.title = 'Trio Dos Laços | Meu Perfil';
+    // useEffect(() => {
+    //     document.title = 'Trio Dos Laços | Meu Perfil';
 
-        let token = localStorage.getItem('USUARIO')
-        if (token === null || token === undefined) {
-            navigate('/')
-        }
-        else {
-        }
-    }, []);
+    //     let token = localStorage.getItem('USUARIO')
+    //     if (token === null || token === undefined) {
+    //         navigate('/')
+    //     }
+    //     else {
+    //     }
+    // }, []);
 
     const navigate = useNavigate()
 
@@ -53,12 +53,12 @@ export default function MeuPerfil() {
 
                     <div className='info'>
                         <h3>Nome</h3>
-                        <h3 className='valor'>{nome}</h3>
+                        <h3 className='valor'>Bruna Vicente</h3>
                     </div>
 
                     <div className='info'>
                         <h3>Email</h3>
-                        <h3 className='valor'>{email}</h3>
+                        <h3 className='valor'>bruna.desenvolvedora@gmail.com</h3>
                     </div>
 
                     <div className='botao' onClick={sair}>Sair</div>
