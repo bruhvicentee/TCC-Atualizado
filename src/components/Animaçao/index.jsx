@@ -13,7 +13,7 @@ export default function AnimatedSection({ children }) {
             if (isInViewport && !isVisible) {
                 setIsVisible(true);
             }
-        }
+        }c
     };
 
     useEffect(() => {
